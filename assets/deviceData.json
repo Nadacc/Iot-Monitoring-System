@@ -1,0 +1,455 @@
+[
+  
+  {
+    "user": {
+      "id": "U001",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "+1234567890"
+    },
+    "fmcg": {
+      "productId": "FMCG001",
+      "productName": "Coca-Cola 500ml",
+      "category": "Beverages",
+      "expiryDate": "2025-12-31"
+    },
+    "store": {
+      "storeId": "S001",
+      "storeName": "ABC Supermarket",
+      "location": {
+        "building": "ABCD, XYZ, 1234",
+        "city": "ABCD",
+        "district": "ABCD",
+        "state": "ABCD",
+        "country": "ABCD",
+        "pinCode": "123456"
+      }
+    },
+    "deviceDetails": {
+      "deviceName": "Device 01",
+      "connectionStatus": {
+        "connected": "2024-06-12T12:26:41.818Z",
+        "disconnected": "2024-06-12T10:26:41.818Z"
+      },
+      "hw_data": {
+        "usb": {
+        "connected": "2025-03-28T12:00:00Z",
+        "disconnected": "2025-03-28T10:00:00Z"
+      },
+        "battery": {
+          "timestamp": "2024-06-12T10:26:41.818Z",
+          "percentage": "50%",
+          "temperature": "30C"
+        },
+        "sim": {
+          "signalStrength": "33%",
+          "operator": "AirTel",
+          "networkBand": "FDD LTE",
+          "connectedAt": "2024-06-12T10:26:41.818Z"
+        }
+      }
+    }
+  },
+  {
+    "user": {
+      "id": "U002",
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "phone": "+9876543210"
+    },
+    "fmcg": {
+      "productId": "FMCG002",
+      "productName": "Pepsi 1L",
+      "category": "Beverages",
+      "expiryDate": "2025-11-30"
+    },
+    "store": {
+      "storeId": "S002",
+      "storeName": "XYZ Mart",
+      "location": {
+        "building": "EFGH, LMN, 5678",
+        "city": "XYZ",
+        "district": "XYZ",
+        "state": "XYZ",
+        "country": "XYZ",
+        "pinCode": "654321"
+      }
+    },
+    "deviceDetails": {
+      "deviceName": "Device 02",
+      "connectionStatus": {
+        "connected": "2024-06-12T11:26:41.818Z",
+        "disconnected": "2024-06-12T10:26:41.818Z"
+      },
+      "hw_data": {
+        "usb": {
+        "connected": "2025-03-28T11:15:00Z",
+        "disconnected": "2025-03-28T13:45:00Z"
+      },
+        "battery": {
+          "timestamp": "2024-06-12T10:26:41.818Z",
+          "percentage": "50%",
+          "temperature": "30C"
+        },
+        "sim": {
+          "signalStrength": "33%",
+          "operator": "AirTel",
+          "networkBand": "FDD LTE",
+          "connectedAt": "2024-06-12T10:26:41.818Z"
+        }
+      }
+    }
+  },
+  {
+    "user": {
+      "id": "U003",
+      "name": "Alice Johnson",
+      "email": "alicejohnson@example.com",
+      "phone": "+1122334455"
+    },
+    "fmcg": {
+      "productId": "FMCG003",
+      "productName": "Sprite 500ml",
+      "category": "Beverages",
+      "expiryDate": "2025-10-15"
+    },
+    "store": {
+      "storeId": "S003",
+      "storeName": "LMN Store",
+      "location": {
+        "building": "IJKL, OPQ, 7890",
+        "city": "LMN",
+        "district": "LMN",
+        "state": "LMN",
+        "country": "LMN",
+        "pinCode": "789012"
+      }
+    },
+    "deviceDetails": {
+      "deviceName": "Device 03",
+      "connectionStatus": {
+        "connected": "2024-06-12T11:26:41.818Z",
+        "disconnected": "2024-06-12T10:26:41.818Z"
+      },
+      "hw_data": {
+        "usb": {
+        "connected": "2025-03-28T09:30:00Z",
+        "disconnected": "2025-03-28T11:30:00Z"
+      },
+        "battery": {
+          "timestamp": "2024-06-12T10:26:41.818Z",
+          "percentage": "70%",
+          "temperature": "32C"
+        },
+        "sim": {
+          "signalStrength": "45%",
+          "operator": "Vodafone",
+          "networkBand": "FDD LTE",
+          "connectedAt": "2024-06-12T10:26:41.818Z"
+        }
+      }
+    }
+  },
+  {
+    "user": {
+      "id": "U004",
+      "name": "Robert Brown",
+      "email": "robertbrown@example.com",
+      "phone": "+9988776655"
+    },
+    "fmcg": {
+      "productId": "FMCG004",
+      "productName": "Fanta 1L",
+      "category": "Beverages",
+      "expiryDate": "2026-01-20"
+    },
+    "store": {
+      "storeId": "S004",
+      "storeName": "PQR Store",
+      "location": {
+        "building": "STUV, WXY, 3456",
+        "city": "PQR",
+        "district": "PQR",
+        "state": "PQR",
+        "country": "PQR",
+        "pinCode": "345678"
+      }
+    },
+    "deviceDetails": {
+      "deviceName": "Device 04",
+      "connectionStatus": {
+        "connected": "2024-06-12T14:26:41.818Z",
+        "disconnected": "2024-06-12T12:26:41.818Z"
+      },
+      "hw_data": {
+        "usb": {
+        "connected": "2025-03-28T14:00:00Z",
+        "disconnected": "2025-03-28T12:00:00Z"
+      },
+        "battery": {
+          "timestamp": "2024-06-12T10:26:41.818Z",
+          "percentage": "80%",
+          "temperature": "29C"
+        },
+        "sim": {
+          "signalStrength": "50%",
+          "operator": "Jio",
+          "networkBand": "FDD LTE",
+          "connectedAt": "2024-06-12T10:26:41.818Z"
+        }
+      }
+    }
+  },
+  
+{
+  "user": {
+    "id": "U005",
+    "name": "Sarah Wilson",
+    "email": "sarahwilson@example.com",
+    "phone": "+1234567891"
+  },
+  "fmcg": {
+    "productId": "FMCG005",
+    "productName": "Mountain Dew 750ml",
+    "category": "Beverages",
+    "expiryDate": "2025-09-30"
+  },
+  "store": {
+    "storeId": "S005",
+    "storeName": "DEF Market",
+    "location": {
+      "building": "DEFG, HIJ, 4567",
+      "city": "DEF",
+      "district": "DEF",
+      "state": "DEF",
+      "country": "DEF",
+      "pinCode": "456789"
+    }
+  },
+  "deviceDetails": {
+    "deviceName": "Device 05",
+    "connectionStatus": {
+      "connected": "2024-06-12T09:26:41.818Z",
+      "disconnected": "2024-06-12T10:36:41.818Z"
+    },
+    "hw_data": {
+      "usb": {
+        "connected": "2025-03-28T11:15:00Z",
+        "disconnected": "2025-03-28T13:45:00Z"
+      },
+      "battery": {
+        "timestamp": "2024-06-12T10:26:41.818Z",
+        "percentage": "45%",
+        "temperature": "31C"
+      },
+      "sim": {
+        "signalStrength": "60%",
+        "operator": "Airtel",
+        "networkBand": "FDD LTE",
+        "connectedAt": "2024-06-12T10:26:41.818Z"
+      }
+    }
+  }
+},
+{
+  "user": {
+    "id": "U006",
+    "name": "Michael Davis",
+    "email": "michaeldavis@example.com",
+    "phone": "+1234567892"
+  },
+  "fmcg": {
+    "productId": "FMCG006",
+    "productName": "7Up 500ml",
+    "category": "Beverages",
+    "expiryDate": "2025-08-15"
+  },
+  "store": {
+    "storeId": "S006",
+    "storeName": "GHI Superstore",
+    "location": {
+      "building": "GHIJ, KLM, 5678",
+      "city": "GHI",
+      "district": "GHI",
+      "state": "GHI",
+      "country": "GHI",
+      "pinCode": "567890"
+    }
+  },
+  "deviceDetails": {
+    "deviceName": "Device 06",
+    "connectionStatus": {
+      "connected": "2024-06-12T12:26:41.818Z",
+      "disconnected": "2024-06-12T10:26:41.818Z"
+    },
+    "hw_data": {
+      "usb": {
+        "connected": "2025-03-28T09:30:00Z",
+        "disconnected": "2025-03-28T11:30:00Z"
+      },
+      "battery": {
+        "timestamp": "2024-06-12T10:26:41.818Z",
+        "percentage": "90%",
+        "temperature": "28C"
+      },
+      "sim": {
+        "signalStrength": "75%",
+        "operator": "Vodafone",
+        "networkBand": "FDD LTE",
+        "connectedAt": "2024-06-12T10:26:41.818Z"
+      }
+    }
+  }
+},
+{
+  "user": {
+    "id": "U007",
+    "name": "Emma Thompson",
+    "email": "emmathompson@example.com",
+    "phone": "+1234567893"
+  },
+  "fmcg": {
+    "productId": "FMCG007",
+    "productName": "Mirinda 1L",
+    "category": "Beverages",
+    "expiryDate": "2025-07-20"
+  },
+  "store": {
+    "storeId": "S007",
+    "storeName": "JKL Mart",
+    "location": {
+      "building": "JKLM, NOP, 6789",
+      "city": "JKL",
+      "district": "JKL",
+      "state": "JKL",
+      "country": "JKL",
+      "pinCode": "678901"
+    }
+  },
+  "deviceDetails": {
+    "deviceName": "Device 07",
+    "connectionStatus": {
+      "connected": "2024-06-12T11:26:41.818Z",
+      "disconnected": "2024-06-12T12:26:41.818Z"
+    },
+    "hw_data": {
+      "usb": {
+        "connected": "2025-03-28T11:30:00Z",
+        "disconnected": "2025-03-28T12:30:00Z"
+      },
+      "battery": {
+        "timestamp": "2024-06-12T10:26:41.818Z",
+        "percentage": "65%",
+        "temperature": "30C"
+      },
+      "sim": {
+        "signalStrength": "40%",
+        "operator": "Jio",
+        "networkBand": "FDD LTE",
+        "connectedAt": "2024-06-12T10:26:41.818Z"
+      }
+    }
+  }
+},
+{
+  "user": {
+    "id": "U008",
+    "name": "David Miller",
+    "email": "davidmiller@example.com",
+    "phone": "+1234567894"
+  },
+  "fmcg": {
+    "productId": "FMCG008",
+    "productName": "Thums Up 750ml",
+    "category": "Beverages",
+    "expiryDate": "2025-06-25"
+  },
+  "store": {
+    "storeId": "S008",
+    "storeName": "MNO Market",
+    "location": {
+      "building": "MNOP, QRS, 7890",
+      "city": "MNO",
+      "district": "MNO",
+      "state": "MNO",
+      "country": "MNO",
+      "pinCode": "789012"
+    }
+  },
+  "deviceDetails": {
+    "deviceName": "Device 08",
+    "connectionStatus": {
+      "connected": "2024-06-12T01:26:41.818Z",
+      "disconnected": "2024-06-12T10:46:41.818Z"
+    },
+    "hw_data": {
+      "usb": {
+        "connected": "2025-03-28T11:15:00Z",
+        "disconnected": "2025-03-28T13:45:00Z"
+      },
+      "battery": {
+        "timestamp": "2024-06-12T10:26:41.818Z",
+        "percentage": "55%",
+        "temperature": "32C"
+      },
+      "sim": {
+        "signalStrength": "85%",
+        "operator": "Airtel",
+        "networkBand": "FDD LTE",
+        "connectedAt": "2024-06-12T10:26:41.818Z"
+      }
+    }
+  }
+},
+{
+  "user": {
+    "id": "U009",
+    "name": "Sophia Clark",
+    "email": "sophiaclark@example.com",
+    "phone": "+1234567895"
+  },
+  "fmcg": {
+    "productId": "FMCG009",
+    "productName": "Limca 500ml",
+    "category": "Beverages",
+    "expiryDate": "2025-05-30"
+  },
+  "store": {
+    "storeId": "S009",
+    "storeName": "PQR Supermarket",
+    "location": {
+      "building": "PQRS, TUV, 8901",
+      "city": "PQR",
+      "district": "PQR",
+      "state": "PQR",
+      "country": "PQR",
+      "pinCode": "890123"
+    }
+  },
+  "deviceDetails": {
+    "deviceName": "Device 09",
+    "connectionStatus": {
+      "connected": "2024-06-12T10:26:41.818Z",
+      "disconnected": "2024-06-12T08:26:41.818Z"
+    },
+    "hw_data": {
+      "usb": {
+        "connected": "2025-03-28T10:00:00Z",
+        "disconnected": "2025-03-28T08:00:00Z"
+      },
+      "battery": {
+        "timestamp": "2024-06-12T10:26:41.818Z",
+        "percentage": "75%",
+        "temperature": "29C"
+      },
+      "sim": {
+        "signalStrength": "70%",
+        "operator": "Vodafone",
+        "networkBand": "FDD LTE",
+        "connectedAt": "2024-06-12T10:26:41.818Z"
+      }
+    }
+  }
+}
+  
+]

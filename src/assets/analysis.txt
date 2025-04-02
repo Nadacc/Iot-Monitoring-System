@@ -1,0 +1,21 @@
+Traffic Metric:
+I have used data0 and data1 from data_1.json and data_0.json and computed data2 as the sum of it.
+
+
+Engagement Metric:
+I have used data0 and data1 from data_0.json and data_1.json and found out how much percentage of it amounts to data2.
+I took the target data2 as 100;
+
+
+Device-activity:
+I have found out device activity by creating a new dataset called devicedata.And fetched all the details about a device
+
+
+Device availability:
+This is plotted by checking the connection status of each devices in deviceData dataset and found out whether it is online or offline.
+
+
+Offline devices:
+It is found out by checking the connected and disconnected time of each devices.If connected is less than disconnected,it is offline.
+
+Inorder to create analytics datas for each devices,i have created a new dataset analyticsdata and gave the details of device's in every dates.I have given datas from March 2 2025 to March 31 2025.So i have kept March 31 as the current date,so whenever you click reset button,it will be resetted to March 31
