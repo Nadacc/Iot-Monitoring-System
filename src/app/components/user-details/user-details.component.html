@@ -1,0 +1,18 @@
+<div class="user-details-container">
+    <div class="user-details-card" *ngIf="userDetails">
+      <div class="profile-header">
+        <div class="profile-icon">{{ userDetails.userName.charAt(0).toUpperCase() }}</div>
+        <h2>User Profile</h2>
+      </div>
+      <div class="details-grid">
+        <div class="detail-item">
+          <div class="detail-label">Username</div>
+          <div class="detail-value">{{ userDetails.userName }}</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Email</div>
+          <div class="detail-value">{{ userDetails.emailId }}</div>
+        </div>
+      </div>
+    </div>
+  </div>

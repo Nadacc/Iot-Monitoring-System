@@ -1,0 +1,26 @@
+<div class="device-activity-container">
+   
+    <div class="header">
+      <span>Device Activity</span>
+      <mat-icon class="sort-icon" (click)="sortDevices()">swap_vert</mat-icon>
+    </div>
+  
+    
+    <div class="device-list">
+      <div *ngFor="let activity of activityCounts" class="device-card" (click)="goToDevice(activity.device)">
+        <div class="device-header">
+          <span class="device-name">{{ activity.device }}</span>
+          <span class="activity-count">{{ activity.count }}</span>
+        </div>
+  
+        <div class="device-details">
+          <p>Store : {{ activity.store }}</p>
+          <p>City : {{ activity.city }}</p>
+          <p>PoC : {{ activity.poc }}</p>
+        </div>
+  
+        <hr />
+      </div>
+    </div>
+  </div>
+  

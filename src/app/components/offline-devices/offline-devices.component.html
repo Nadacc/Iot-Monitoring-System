@@ -1,0 +1,25 @@
+<div class="device-activity-container">
+  <!-- Header -->
+  <div class="header">
+    <span>Offline Devices</span>
+    <mat-icon class="sort-icon" (click)="sortOfflineDevices()">swap_vert</mat-icon>
+  </div>
+
+  <!-- Scrollable Device List -->
+  <div class="device-list">
+    <div *ngFor="let device of offlineDevices" class="device-card" (click)="goToDevice(device.device)">
+      <div class="device-header">
+        <span class="device-name">{{ device.device }}</span>
+      </div>
+
+      <div class="device-details">
+        <p>{{device.lastSeen}}</p>
+        <p>Store : {{ device.store }}</p>
+        <p>City : {{ device.city }}</p>
+        <p>PoC : {{ device.poc }}</p>
+      </div>
+
+      <hr />
+    </div>
+  </div>
+</div>

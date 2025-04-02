@@ -1,0 +1,24 @@
+<div class="uptime-container">
+  <div class="uptime-header">
+    <span>Uptime</span>
+    <div class="legend">
+      <div class="legend-item">
+        <span class="dot online"></span>
+        <span>Online</span>
+      </div>
+      <div class="legend-item">
+        <span class="dot offline"></span>
+        <span>Offline</span>
+      </div>
+    </div>
+  </div>
+  <div class="timeline">
+    <div *ngFor="let block of hourBlocks" 
+         class="time-block"
+         [ngClass]="block.status">
+    </div>
+  </div>
+  <div class="hour-labels">
+    <span *ngFor="let hour of hourLabels">{{hour}}</span>
+  </div>
+</div>

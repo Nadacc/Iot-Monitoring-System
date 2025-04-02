@@ -1,0 +1,49 @@
+<div class="search-container">
+  <mat-form-field class="search-box" appearance="outline">
+    <mat-label>Search</mat-label>
+    <input matInput (input)="filterDevices($event)" placeholder="Type to search..." />
+    <mat-icon matSuffix>search</mat-icon>
+    
+    
+    <mat-icon matSuffix class="filter-icon" (click)="toggleDropdown()">filter_list</mat-icon>
+  </mat-form-field>
+
+  
+  <div class="filter-dropdown" *ngIf="showDropdown">
+    <mat-radio-group>
+      <mat-radio-button value="deviceName" (click)="applySort('deviceName')">Device Name</mat-radio-button>
+        <mat-radio-button value="battery" (click)="applySort('battery')">Battery Level</mat-radio-button>
+    </mat-radio-group>
+  </div>
+</div>
+
+<div class="device-container">
+  <mat-card *ngFor="let device of filteredDevices" class="device-card" (click)="navigateToDevice(device.deviceDetails.deviceName)">
+    <div class="icons">
+      <mat-icon class="icon">settings_input_antenna</mat-icon>
+      <mat-icon class="icon">battery_charging_full</mat-icon>
+      <mat-icon class="icon">usb</mat-icon>
+    </div>
+
+    <mat-card-header>
+      <mat-card-title>{{ device.deviceDetails.deviceName }}</mat-card-title>
+    </mat-card-header>
+
+    <div class="status-badges">
+      <span class="status" [ngClass]="{
+        'online-status': deviceStatus(device.deviceDetails.connectionStatus) === 'Online',
+        'offline-status': deviceStatus(device.deviceDetails.connectionStatus) === 'Offline'
+      }">
+        {{ deviceStatus(device.deviceDetails.connectionStatus) }}
+      </span>
+      <span class="deployment-badge blue-transparent">Deployed</span>
+    </div>
+
+    <mat-card-content>
+      <p><strong>Store:</strong> {{ device.store.storeName }}</p>
+      <p><strong>FMCG:</strong> {{ device.fmcg.productName }}</p>
+      <p><strong>User:</strong> {{ device.user.name }}</p>
+      <p><strong>Battery:</strong> {{ device.deviceDetails.hw_data.battery.percentage }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

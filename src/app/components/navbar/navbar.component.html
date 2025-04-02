@@ -1,0 +1,35 @@
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-left">
+    <div class="menu-icon" (click)="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="logo">Estro Tech</div>
+  </div>
+
+  <!-- Profile Section -->
+  <div class="profile-container" (click)="toggleDropdown($event)">
+    <div class="profile-icon">{{ firstLetter }}</div>
+    <div class="dropdown-menu" [class.show]="isDropdownOpen">
+      <p class="username" (click)="goToProfile()">{{ userName }}</p> 
+      <p (click)="toggleTheme()" class="toggle">
+        <i class="fas" [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"></i> 
+        {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
+      </p>
+      
+      <p (click)="logout()" class="logout">Logout</p>
+    </div>
+  </div>
+</nav>
+
+<!-- Sidebar -->
+<div class="sidebar" [class.open]="isSidebarOpen">
+<ul>
+  <li><a routerLink="/dashboard" routerLinkActive="active" (click)="navigateTo('/dashboard')">Dashboard</a></li>
+  <li><a routerLink="/devices" routerLinkActive="active" (click)="navigateTo('/devices')">Devices</a></li>
+
+</ul>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" [class.show]="isSidebarOpen" (click)="closeSidebar()"></div>

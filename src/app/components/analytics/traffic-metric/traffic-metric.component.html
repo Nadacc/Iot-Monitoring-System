@@ -1,0 +1,13 @@
+<mat-card class="chart-card">
+  <div class="chart-header">
+    <div class="chart-title">Traffic Metrics</div>
+    <button class="download" (click)="downloadChart()">
+      <mat-icon>file_download_outline</mat-icon>
+    </button>
+  </div>
+  <div class="chart-container">
+    <div class="chart-wrapper">
+      <canvas #trafficChartCanvas></canvas>
+    </div>
+  </div>
+</mat-card>

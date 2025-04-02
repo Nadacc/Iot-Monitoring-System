@@ -1,0 +1,21 @@
+<div class="progress-container">
+    <h3>Engagement Metrics</h3>
+
+    <div class="progress-section">
+        <p>Engagement Rate</p>
+        <span class="percentage green">{{ progressData1 }}%</span>
+        <span class="progress-value green">{{ progressData1 }}</span>
+        <mat-progress-bar mode="determinate" [value]="progressData1" color="accent"></mat-progress-bar>
+    </div>
+
+    <div class="progress-section">
+        <p>Pre-Engagement Rate</p>
+        <span class="percentage red">{{ progressData0 }}%</span>
+        <span class="progress-value red">{{ progressData0 }}</span>
+        <mat-progress-bar mode="determinate" [value]="progressData0" color="warn"></mat-progress-bar>
+    </div>
+
+    <div class="progress-section data2">
+        <p>Total Footfalls <span class="progress-value blue">{{ progressData2 }}</span></p>
+    </div>
+</div>

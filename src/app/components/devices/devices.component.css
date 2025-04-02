@@ -1,0 +1,173 @@
+.device-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  padding-left: 100px;
+}
+
+.device-card {
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.device-card:hover {
+  transform: translateY(-2px);
+}
+
+.icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Status Badges */
+.status-badges {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.online-status,
+.offline-status,
+.blue-transparent {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.online-status {
+  background: rgba(75, 192, 192, 0.2);
+  color: green;
+}
+
+.offline-status {
+  background: rgba(255, 99, 132, 0.2);
+  color: red;
+}
+
+.blue-transparent {
+  background: rgba(0, 98, 255, 0.2);
+  color: rgb(0, 136, 255);
+}
+
+mat-card {
+  background-color: black;
+  margin-top: 20px;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 10px;
+  margin-top: 50px;
+}
+
+.mat-icon {
+  cursor: pointer;
+}
+
+.mat-form-field {
+  width: 250px;
+}
+
+/* Filter Dropdown */
+.filter-dropdown {
+  position: absolute;
+  top: 100%;
+  margin: auto;
+  background: black;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Filter Icon */
+.filter-icon {
+  cursor: pointer;
+  color: #555;
+  font-size: 24px;
+}
+
+.filter-icon:hover {
+  color: #007bff;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .device-container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 10px;
+  }
+
+  .device-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .search-box {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .filter-dropdown {
+    width: 90%;
+    min-width: unset;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .device-card {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .status-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-icon {
+    font-size: 20px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}

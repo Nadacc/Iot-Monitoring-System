@@ -1,0 +1,35 @@
+<section class="vh-100">
+  <div class="container-fluid">
+    <div class="form-container">
+      <h3>Welcome Back</h3>
+
+      <div class="form-outline">
+        <label for="email">Email address</label>
+        <input 
+          id="email" 
+          [(ngModel)]="userLogin.emailId" 
+          type="email" 
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div class="form-outline">
+        <label for="password">Password</label>
+        <input 
+          id="password" 
+          [(ngModel)]="userLogin.password" 
+          type="password" 
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <button (click)="onLogin()" class="btn" type="button">
+        Sign In
+      </button>
+
+      <p>Don't have an account? 
+        <a (click)="navigateToRegister()" class="link-info">Sign up</a>
+      </p>
+    </div>
+  </div>
+</section>

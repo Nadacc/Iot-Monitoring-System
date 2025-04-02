@@ -1,0 +1,53 @@
+<section class="vh-100">
+  <div class="container-fluid">
+    <div class="form-container">
+      <h3>Create Account</h3>
+
+      <form>
+        <div class="form-outline">
+          <label for="email">Email address</label>
+          <input 
+            id="email" 
+            name="email" 
+            [(ngModel)]="userRegisterObj.emailId" 
+            type="email" 
+            placeholder="Enter your email"
+            required 
+          />
+        </div>
+
+        <div class="form-outline">
+          <label for="username">Username</label>
+          <input 
+            id="username" 
+            name="username" 
+            [(ngModel)]="userRegisterObj.userName" 
+            type="text" 
+            placeholder="Enter your username"
+            required 
+          />
+        </div>
+
+        <div class="form-outline">
+          <label for="password">Password</label>
+          <input 
+            id="password" 
+            name="password" 
+            [(ngModel)]="userRegisterObj.password" 
+            type="password" 
+            placeholder="Enter your password"
+            required 
+          />
+        </div>
+
+        <button (click)="onRegister()" class="btn" type="button">
+          Create Account
+        </button>
+
+        <p>Already have an account? 
+          <a (click)="navigateToLogin()" class="link-info">Sign in</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

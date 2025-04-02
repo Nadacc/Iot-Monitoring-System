@@ -1,0 +1,149 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dddddd25;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    
+}
+
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #1a1a1a;
+    color: white;
+    transition: left 0.3s ease-in-out;
+    padding-top: 50px;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #dddddd25;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    display: none; 
+    cursor: pointer; 
+}
+
+.overlay.show {
+    display: block; 
+}
+
+.profile-container{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+   
+    color: white;
+    font-size: 20px;
+    border-style:solid;
+    border-width: 0.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 20px;
+    
+  }
+
+  
+
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0; 
+    background: #202123;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(112, 106, 106, 0.542);
+    min-width: 180px;
+    z-index: 1000;
+    display: none; 
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.username {
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    
+}
+
+.toggle{
+    
+    color: white;
+}
+
+.logout{
+    
+    color: white;
+}
+
+  .dropdown-menu p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: background 0.2s;
+    
+  }
+  
+  
+
+  .dropdown-menu.show {
+    display: block; 
+}
+
+
+
+
+  

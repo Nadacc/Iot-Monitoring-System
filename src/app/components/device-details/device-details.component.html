@@ -1,0 +1,117 @@
+<div class="breadcrumb">
+    <span (click)="goBack()" class="link">Devices</span>
+    <mat-icon>chevron_right</mat-icon>
+    <span>{{ deviceName }}</span>
+  </div>
+  
+  <div class="device-content" *ngIf="device">
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="info-label">Name</div>
+        <div class="info-value">{{ device.deviceDetails.deviceName }}</div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">Status</div>
+        <div class="status-badges">
+            <span class="status" [ngClass]="{
+              'online-status': deviceStatus(device.deviceDetails.connectionStatus) === 'Online',
+              'offline-status': deviceStatus(device.deviceDetails.connectionStatus) === 'Offline'
+            }">
+              {{ deviceStatus(device.deviceDetails.connectionStatus) }}
+            </span>
+            <span class="deployment-badge blue-transparent">Deployed</span>
+          </div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">USB</div>
+        <div class="connection-status" [ngClass]="usbStatus(device.deviceDetails.hw_data.usb)">
+          
+          <span>{{ usbStatus(device.deviceDetails.hw_data.usb) === 'connected' ? 'Connected' : 'Disconnected' }}</span>
+        </div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">Store</div>
+        <div class="info-value">{{ device.store.storeName }}</div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">FMCG</div>
+        <div class="info-value">{{ device.fmcg.productName }}</div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">User</div>
+        <div class="info-value">{{ device.user.name }}</div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">Location</div>
+        <div class="info-value">{{ device.store.location.city }}, {{ device.store.location.state }}</div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">Battery Temperature</div>
+        <div class="info-value">{{ device.deviceDetails.hw_data.battery.temperature }}</div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">Battery</div>
+        <div class="info-value">{{ device.deviceDetails.hw_data.battery.percentage }}</div>
+      </div>
+  
+      <div class="info-item">
+        <div class="info-label">Network</div>
+        <div class="info-value">{{ device.deviceDetails.hw_data.sim.networkBand }}</div>
+      </div>
+    </div>
+
+    <div class="analytics-header-container">
+      <div class="header-row">
+        <div class="analytics-header">
+          Analytics
+        </div>
+      </div>
+      <div class="date-selector">
+        <div class="date-display">{{ selectedDate | date:'EEE dd MMM yyyy' }}</div>
+  <div class="date-controls">
+    <button mat-icon-button class="calendar-button" (click)="picker.open()">
+      <mat-icon>calendar_today</mat-icon>
+    </button>
+    <button mat-icon-button class="reset-button" (click)="resetDate()">
+      <mat-icon>restart_alt</mat-icon>
+    </button>
+  </div>
+        <mat-form-field appearance="fill" class="hidden-form-field">
+          <input 
+            matInput 
+            [matDatepicker]="picker" 
+            [(ngModel)]="selectedDate" 
+            (dateChange)="onDateChange($event)">
+          <mat-datepicker 
+            #picker 
+            startView="month" 
+            [startAt]="defaultMarchDate">
+          </mat-datepicker>
+        </mat-form-field>
+        
+      </div>
+      
+    </div>
+    
+    
+    
+    <div class="analytics-section">
+      
+        <app-traffic-metric [selectedDate]="selectedDate"></app-traffic-metric>
+      
+        <app-engagment-metric [selectedDate]="selectedDate"></app-engagment-metric>
+      
+        <app-uptime-metric [selectedDate]="selectedDate"></app-uptime-metric>
+      
+      
+    </div>
+  
+    

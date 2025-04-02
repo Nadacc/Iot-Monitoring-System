@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+body, html {
+    background-color: #1a1a1a; /* Makes the whole page black */
+    color: white; /* Ensures text is visible */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* .dashboard-container {
+    background-color: #202123;
+    color: white;
+    min-height: 100vh; 
+    padding: 20px; 
+} */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+.mat-mdc-progress-bar.mat-accent {
+  --mdc-linear-progress-active-indicator-color: green;
+}
+
+.mat-mdc-progress-bar.mat-warn {
+  --mdc-linear-progress-active-indicator-color: red;
+}
+
+
+.mat-mdc-progress-bar {
+  --mdc-linear-progress-track-color: rgba(255, 255, 255, 0.1);
+}
